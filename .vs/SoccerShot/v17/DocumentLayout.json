@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Computaci\u00F3n Grafica\\SoccerShot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{695EF333-507A-250D-C84D-EF8D48E43626}|Assembly-CSharp.csproj|G:\\Computaci\u00F3n Grafica\\SoccerShot\\assets\\script\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695EF333-507A-250D-C84D-EF8D48E43626}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695EF333-507A-250D-C84D-EF8D48E43626}|Assembly-CSharp.csproj|g:\\computaci\u00F3n grafica\\soccershot\\assets\\script\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695EF333-507A-250D-C84D-EF8D48E43626}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695EF333-507A-250D-C84D-EF8D48E43626}|Assembly-CSharp.csproj|g:\\computaci\u00F3n grafica\\soccershot\\assets\\script\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695EF333-507A-250D-C84D-EF8D48E43626}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695EF333-507A-250D-C84D-EF8D48E43626}|Assembly-CSharp.csproj|g:\\computaci\u00F3n grafica\\soccershot\\assets\\script\\tiros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695EF333-507A-250D-C84D-EF8D48E43626}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\tiros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695EF333-507A-250D-C84D-EF8D48E43626}|Assembly-CSharp.csproj|g:\\computaci\u00F3n grafica\\soccershot\\assets\\script\\score.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695EF333-507A-250D-C84D-EF8D48E43626}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\score.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695EF333-507A-250D-C84D-EF8D48E43626}|Assembly-CSharp.csproj|G:\\Computaci\u00F3n Grafica\\SoccerShot\\assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695EF333-507A-250D-C84D-EF8D48E43626}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695EF333-507A-250D-C84D-EF8D48E43626}|Assembly-CSharp.csproj|G:\\Computaci\u00F3n Grafica\\SoccerShot\\assets\\script\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695EF333-507A-250D-C84D-EF8D48E43626}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ScoreManager.cs",
+              "DocumentMoniker": "G:\\Computaci\u00F3n Grafica\\SoccerShot\\Assets\\Script\\ScoreManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ScoreManager.cs",
+              "ToolTip": "G:\\Computaci\u00F3n Grafica\\SoccerShot\\Assets\\Script\\ScoreManager.cs",
+              "RelativeToolTip": "Assets\\Script\\ScoreManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T03:52:42.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Score.cs",
+              "DocumentMoniker": "G:\\Computaci\u00F3n Grafica\\SoccerShot\\Assets\\Script\\Score.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Score.cs",
+              "ToolTip": "G:\\Computaci\u00F3n Grafica\\SoccerShot\\Assets\\Script\\Score.cs",
+              "RelativeToolTip": "Assets\\Script\\Score.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T03:52:35.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tiros.cs",
+              "DocumentMoniker": "G:\\Computaci\u00F3n Grafica\\SoccerShot\\Assets\\Script\\Tiros.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Tiros.cs",
+              "ToolTip": "G:\\Computaci\u00F3n Grafica\\SoccerShot\\Assets\\Script\\Tiros.cs",
+              "RelativeToolTip": "Assets\\Script\\Tiros.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T03:52:33.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "G:\\Computaci\u00F3n Grafica\\SoccerShot\\Assets\\Script\\GameController.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameController.cs",
+              "ToolTip": "G:\\Computaci\u00F3n Grafica\\SoccerShot\\Assets\\Script\\GameController.cs",
+              "RelativeToolTip": "Assets\\Script\\GameController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAADYAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T03:47:51.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameOver.cs",
+              "DocumentMoniker": "G:\\Computaci\u00F3n Grafica\\SoccerShot\\Assets\\Script\\GameOver.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameOver.cs",
+              "ToolTip": "G:\\Computaci\u00F3n Grafica\\SoccerShot\\Assets\\Script\\GameOver.cs",
+              "RelativeToolTip": "Assets\\Script\\GameOver.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T14:02:21.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "G:\\Computaci\u00F3n Grafica\\SoccerShot\\Assets\\Script\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\PlayerController.cs",
+              "ToolTip": "G:\\Computaci\u00F3n Grafica\\SoccerShot\\Assets\\Script\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Script\\PlayerController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAC4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T19:28:37.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Arrow.cs",
+              "DocumentMoniker": "G:\\Computaci\u00F3n Grafica\\SoccerShot\\Assets\\Script\\Arrow.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Arrow.cs",
+              "ToolTip": "G:\\Computaci\u00F3n Grafica\\SoccerShot\\Assets\\Script\\Arrow.cs",
+              "RelativeToolTip": "Assets\\Script\\Arrow.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwCwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T20:00:39.227Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

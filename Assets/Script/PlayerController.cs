@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,57 +10,56 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Tiros tiros;
 
+
+    private bool hasKicked = false;
+    private Vector3 kickDirection;
+
     void Update()
     {
-        // Detectar el input del jugador para patear la pelota
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!hasKicked)
         {
-            // Obtener el ángulo de dirección desde la flecha
             float horizontalAngle = FindObjectOfType<Arrow>().GetShootDirection();
-
-            // Calcular la dirección de disparo incluyendo la elevación
-            Vector3 kickDirection = CalculateKickDirection(horizontalAngle, elevationAngle);
-
-            // Patear la pelota en la dirección especificada
-            KickBall(kickDirection);
+            kickDirection = CalculateKickDirection(horizontalAngle, elevationAngle);
+            
+            hasKicked = true;
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        // Verificar si el trigger fue activado por un objeto que tiene la etiqueta "Gol"
+        if (other.CompareTag("Ball"))
+        {
+            KickBall();
         }
     }
 
-    void KickBall(Vector3 kickDirection)
+    void KickBall()
     {
-        // Encontrar la pelota más cercana al jugador
         GameObject ball = FindClosestBall();
 
         if (ball != null)
         {
-            // Aplicar fuerza a la pelota para patearla en la dirección especificada
             Rigidbody ballRigidbody = ball.GetComponent<Rigidbody>();
             if (ballRigidbody != null)
             {
                 ballRigidbody.AddForce(kickDirection * kickForce, ForceMode.Impulse);
             }
-            tiros.UseTiros(1);
+            tiros.UseTiros(0.5f); // Usar un tiro al patear la pelota
         }
     }
 
     Vector3 CalculateKickDirection(float horizontalAngleDegrees, float elevationAngleDegrees)
     {
-        // Convertir los ángulos a radianes
         float horizontalAngleRadians = horizontalAngleDegrees * Mathf.Deg2Rad;
         float elevationAngleRadians = elevationAngleDegrees * Mathf.Deg2Rad;
-
-        // Calcular las componentes X, Y y Z del vector de dirección
         float x = Mathf.Cos(horizontalAngleRadians) * Mathf.Cos(elevationAngleRadians);
         float y = Mathf.Sin(elevationAngleRadians);
         float z = Mathf.Sin(horizontalAngleRadians) * Mathf.Cos(elevationAngleRadians);
-
-        // Crear y devolver el vector de dirección normalizado
-        return new Vector3(z,y, x).normalized;
+        return new Vector3(z, y, x).normalized;
     }
 
     GameObject FindClosestBall()
     {
-        // Encontrar la pelota más cercana al jugador
         GameObject[] balls = GameObject.FindGameObjectsWithTag("Ball");
         GameObject closestBall = null;
         float closestDistance = Mathf.Infinity;

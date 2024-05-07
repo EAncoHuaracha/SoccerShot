@@ -13,30 +13,40 @@ public class GameController : MonoBehaviour
     private bool ballDetected = false; // Bandera para indicar si se ha detectado el balón
 
     private float initialScore;
+    private float initialTiros;
 
     [SerializeField] private Score score;
 
     void Start()
     {
-        initialScore = ScoreManager.GetScore(); // Guardar el puntaje inicial al iniciar la escena
+        // Cargar el puntaje guardado al iniciar la escena
+        ScoreManager.LoadScore();
+        initialScore = ScoreManager.GetScore(); // Guarcar el puntaje inicial
+        initialTiros = ScoreManager.GetTiros(); // Guardar los tiros iniciales inicial
     }
 
     void Update()
     {
+        
         // Verificar si se ha detectado el balón
         if (ballDetected)
         {
             messageText.gameObject.SetActive(true);
             Invoke("ReloadScene", 5f);
         }
+        else
+        {
+            Invoke("ReloadScene", 10f);
+        }
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        // Verificar si el trigger fue activado por un objeto que tiene la etiqueta "Gol"
+        // Verificar si el trigger fue activado
         if (other.CompareTag("Gol"))
         {
-            score.AddScore(10);
+            score.AddScore(5); // Agregar puntaje al marcador
             messageAudioSource.Play();
             ballDetected = true;
         }
@@ -44,16 +54,10 @@ public class GameController : MonoBehaviour
 
     private void ReloadScene()
     {
-        // Obtener el índice de la escena actual
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
-        // Cargar la misma escena nuevamente
         SceneManager.LoadScene(currentSceneIndex);
 
-        // Restaurar el puntaje inicial guardado al reiniciar la escena
-        ScoreManager.SetScore(initialScore);
-
-        // Restaurar la escala de tiempo a 1 (por si acaso se ha cambiado)
         Time.timeScale = 1f;
     }
 }

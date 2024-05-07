@@ -11,8 +11,7 @@ public class Score : MonoBehaviour
     void Start()
     {
         scoreText = GetComponent<Text>();
-        // Cargar el puntaje guardado al iniciar la escena
-        LoadScore();
+        LoadScore(); // Cargar el puntaje guardado al iniciar la escena
     }
 
     public void AddScore(float scoreEntry)
@@ -24,7 +23,6 @@ public class Score : MonoBehaviour
 
     private void UpdateScoreText()
     {
-        // Obtener el puntaje actual del ScoreManager y actualizar el texto
         scoreText.text = ScoreManager.GetScore().ToString("0");
     }
 
@@ -33,5 +31,10 @@ public class Score : MonoBehaviour
         // Cargar el puntaje guardado al iniciar la escena
         ScoreManager.LoadScore();
         UpdateScoreText(); // Actualizar el texto del puntaje
+    }
+
+    private void OnDestroy()
+    {
+        ScoreManager.SaveScore(); // Guardar el puntaje al destruir el objeto
     }
 }
